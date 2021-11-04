@@ -1,4 +1,5 @@
-import { Action } from "./actions/index";
+import { ActionType } from "../action-types";
+import { Action } from "../actions/index";
 
 const initialState = 0;
 // Action look
@@ -16,11 +17,11 @@ const initialState = 0;
 
 const reducer = (state: number = initialState, action: Action) => {
   switch (action.type) {
-    case "DEPOSIT":
+    case ActionType.DEPOSIT:
       return state + action.payload;
-    case "WITHDRAW":
+    case ActionType.WITHDRAW:
       return state - action.payload;
-    case "BANKRUPT":
+    case ActionType.BANKRUPT:
       return 0;
     default:
       return state;
