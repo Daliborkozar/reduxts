@@ -1,3 +1,5 @@
+import { Action } from "./actions/index";
+
 const initialState = 0;
 // Action look
 // {
@@ -11,21 +13,6 @@ const initialState = 0;
 // }
 
 // Interface for every action
-interface DepositAction {
-  type: "DEPOSIT";
-  payload: number;
-}
-
-interface withdrawAction {
-  type: "WITHDRAW";
-  payload: number;
-}
-
-interface bankruptAction {
-    type: 'BANKRUPT'
-}
-
-type Action = DepositAction | withdrawAction | bankruptAction
 
 const reducer = (state: number = initialState, action: Action) => {
   switch (action.type) {
