@@ -1,1 +1,1 @@
-Simple app as practice Redux and TS
+Simple app as practice Redux and Typescript, the focus is not on design
