@@ -19,7 +19,7 @@ function App() {
       <h1>Bank state: {bankstate}</h1>
       <button onClick={()=> depositMoney(1000)}>Deposit</button>
       <button onClick={()=> withdrawMoney(100)}>Withdraw</button>
-      <button onClick={bankruptMoney}>Bankrupt</button>
+      <button onClick={() => bankruptMoney()}>Bankrupt</button>
     </div>
   );
 }
